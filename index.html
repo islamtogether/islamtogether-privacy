@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Islam Together</title>
+  <meta name="description" content="Política de Privacidad oficial y condiciones de tratamiento de datos de la aplicación móvil Islam Together (com.islamtogether.app)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #0D0B14;
+      --bg-card: #161324;
+      --bg-card-alt: #1E1A30;
+      --border: rgba(235, 209, 151, 0.16);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --gold: #EBD197;
+      --gold-deep: #C5A059;
+      --emerald: #10B981;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --danger: #EF4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1E1836 0%, var(--bg-main) 65%);
+      color: var(--text-main);
+      line-height: 1.65;
+      min-height: 100vh;
+      padding-bottom: 64px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(13, 11, 20, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(235, 209, 151, 0.2), rgba(197, 160, 89, 0.08));
+      border: 1px solid rgba(235, 209, 151, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--gold);
+    }
+
+    .brand-text {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--gold);
+      display: block;
+      font-weight: 500;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+      color: #0D0B14;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, var(--bg-card), var(--bg-card-alt));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(235, 209, 151, 0.12);
+      border: 1px solid rgba(235, 209, 151, 0.3);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 16px 0 6px;
+    }
+
+    p {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 8px 0 12px 20px;
+      color: #CBD5E1;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .perm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .perm-item {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .perm-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .perm-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-top: 14px;
+      font-size: 0.92rem;
+      color: #D1FAE5;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    [data-lang] {
+      display: none;
+    }
+
+    [data-lang].visible {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .hero, .section-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">☪</div>
+        <div>
+          <span class="brand-text">Islam Together</span>
+          <span class="brand-sub">com.islamtogether.app</span>
+        </div>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Selector de idioma">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ==================== ESPAÑOL ==================== -->
+    <div data-lang="es" class="visible">
+      <div class="hero">
+        <span class="badge">Documento Oficial · Google Play</span>
+        <h1>Política de Privacidad</h1>
+        <p class="meta">Última actualización: 12 de octubre de 2026 · Aplicación: <strong>Islam Together</strong> (<code>com.islamtogether.app</code>)</p>
+      </div>
+
+      <section class="section-card">
+        <h2>1. Introducción y Responsable</h2>
+        <p>Bienvenido a <strong>Islam Together</strong>. Respetamos profundamente tu privacidad y nos comprometemos a proteger tus datos personales de acuerdo con el Reglamento General de Protección de Datos (RGPD / GDPR), la Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD) y las políticas de Seguridad de Datos de Google Play Store.</p>
+        <p>Esta Política de Privacidad explica qué información recopilamos, cómo la utilizamos, cómo se almacena de forma segura y cómo puedes ejercer tus derechos de acceso, rectificación o eliminación total en cualquier momento.</p>
+      </section>
+
+      <section class="section-card">
+        <h2>2. Datos que Recopilamos y su Finalidad</h2>
+        <p>Islam Together recopila únicamente los datos estrictamente necesarios para ofrecer sus funciones espirituales, comunitarias y de seguimiento diario:</p>
+        
+        <h3>2.1. Datos de Cuenta y Perfil (Opcionales para funciones sociales)</h3>
+        <ul>
+          <li><strong>Correo electrónico y credenciales de autenticación:</strong> Gestionados de forma cifrada mediante <em>Supabase Auth</em> para permitir el inicio de sesión y la recuperación de cuenta.</li>
+          <li><strong>Nombre de usuario (<code>@username</code>) y nombre visible:</strong> Necesarios para identificar tu perfil en la comunidad, conectar con amigos y compartir rachas de oración o lectura del Corán.</li>
+        </ul>
+
+        <h3>2.2. Progreso Espiritual y Actividad en la Comunidad</h3>
+        <ul>
+          <li><strong>Rachas de oración y progreso del Corán:</strong> Se sincronizan en tu perfil para que puedas conservar tu historial y compartir tu progreso con tus amigos agregados.</li>
+          <li><strong>Muro Comunitario de Duas (Súplicas):</strong> Si publicas una súplica comunitaria o rezas por la de otro usuario, se almacena el texto de la súplica y el contador de apoyo.</li>
+          <li><strong>Mensajes entre amigos:</strong> Los mensajes enviados en el chat de amigos se almacenan para su entrega y <strong>se eliminan automáticamente transcurridos 30 días</strong> desde su envío, o de forma inmediata si se elimina la amistad o la cuenta.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <strong>Compromiso de Privacidad:</strong> Islam Together <strong>NO vende, alquila ni comparte</strong> tus datos personales con terceros con fines publicitarios ni de seguimiento comercial.
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>3. Permisos del Dispositivo</h2>
+        <p>Para funcionar correctamente en tu dispositivo Android, la aplicación puede solicitar los siguientes permisos:</p>
+        <div class="perm-grid">
+          <div class="perm-item">
+            <div class="perm-title">📍 Ubicación (Precisa y Aproximada)</div>
+            <div class="perm-desc">Se utiliza <strong>exclusivamente</strong> para calcular con precisión astronómica los horarios de oración (Adhan) según tu latitud/longitud y orientar la brújula hacia la Quibla. No rastreamos ni vendemos tu historial de ubicaciones.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">🔔 Notificaciones y Alarmas Exactas</div>
+            <div class="perm-desc">Permisos (<code>POST_NOTIFICATIONS</code>, <code>USE_EXACT_ALARM</code> y servicio en primer plano de audio) necesarios para reproducir el Adhan y avisarte puntualmente en cada oración diaria.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">🔒 Biometría / Huella Dactilar</div>
+            <div class="perm-desc">Permiso (<code>USE_BIOMETRIC</code>) utilizado localmente a través del sistema Android para desbloquear la aplicación si activas el bloqueo de seguridad. Tus datos biométricos nunca salen de tu dispositivo.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">💳 Google Play Billing</div>
+            <div class="perm-desc">Las compras o aportaciones dentro de la aplicación son procesadas íntegramente por Google Play. Islam Together no almacena ni tiene acceso a los datos de tu tarjeta bancaria.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>4. Almacenamiento, Seguridad y Retención de Datos</h2>
+        <ul>
+          <li><strong>Cifrado en tránsito y en reposo:</strong> Todas las comunicaciones entre la app y nuestra base de datos en la nube (<em>Supabase</em>) se realizan mediante conexiones seguras cifradas con HTTPS/TLS. En el dispositivo utilizamos almacenamiento local seguro (<code>flutter_secure_storage</code>) y políticas de seguridad a nivel de fila (<em>Row Level Security - RLS</em>).</li>
+          <li><strong>Retención de mensajes (30 días):</strong> Los mensajes privados entre amigos tienen un periodo máximo de retención de 30 días, tras los cuales son purgados automáticamente de nuestros servidores.</li>
+          <li><strong>Retención de cuenta:</strong> Los datos de tu perfil se conservan mientras mantengas tu cuenta activa.</li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>5. Eliminación de Cuenta y Derechos del Usuario (RGPD)</h2>
+        <p>Tienes control total sobre tus datos personales y puedes ejercer tus derechos de acceso, rectificación, portabilidad y supresión (derecho al olvido) en cualquier momento:</p>
+        <ul>
+          <li><strong>Eliminación inmediata desde la App:</strong> Entra en <strong>Ajustes → Cuenta → Eliminar cuenta</strong> y confirma la acción. Esto ejecuta el borrado inmediato e irreversible en cascada (<code>ON DELETE CASCADE</code>) de tu usuario, perfil, rachas, amistades, mensajes y súplicas sin periodo de retención adicional.</li>
+          <li><strong>Solicitud vía Web / Correo Electrónico:</strong> Si ya has desinstalado la aplicación, puedes solicitar la eliminación de tu cuenta o de datos específicos a través de nuestra página dedicada de eliminación de cuentas o escribiendo a nuestro correo de soporte.</li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>6. Privacidad de los Menores</h2>
+        <p>Islam Together es una aplicación apta para todos los públicos centrada en la práctica espiritual. No recopilamos deliberadamente información personal identificable de menores de 13 años (o la edad mínima equivalente en su jurisdicción) sin el consentimiento verificable de sus padres o tutores. Si un padre o tutor detecta que un menor ha proporcionado datos personales sin consentimiento, puede eliminar la cuenta directamente desde los ajustes de la app o contactarnos para su borrado inmediato.</p>
+      </section>
+
+      <section class="section-card">
+        <h2>7. Contacto y Soporte</h2>
+        <p>Si tienes cualquier duda sobre esta Política de Privacidad, el tratamiento de tus datos o deseas ejercer tus derechos, puedes contactarnos en:</p>
+        <ul>
+          <li><strong>Correo electrónico de contacto:</strong> <a href="mailto:sinan.bouhoutani@edu.uah.es">sinan.bouhoutani@edu.uah.es</a></li>
+          <li><strong>Aplicación:</strong> Islam Together (<code>com.islamtogether.app</code>)</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <div data-lang="en">
+      <div class="hero">
+        <span class="badge">Official Document · Google Play</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: October 12, 2026 · Application: <strong>Islam Together</strong> (<code>com.islamtogether.app</code>)</p>
+      </div>
+
+      <section class="section-card">
+        <h2>1. Introduction & Data Controller</h2>
+        <p>Welcome to <strong>Islam Together</strong>. We deeply respect your privacy and are committed to protecting your personal data in compliance with the General Data Protection Regulation (GDPR) and Google Play Store Data Safety policies.</p>
+        <p>This Privacy Policy explains what information we collect, how we use it, how it is securely stored, and how you can exercise your rights to access, update, or permanently delete your data at any time.</p>
+      </section>
+
+      <section class="section-card">
+        <h2>2. Data We Collect and Its Purpose</h2>
+        <p>Islam Together only collects the minimum data strictly required to provide its spiritual, community, and daily tracking features:</p>
+        
+        <h3>2.1. Account & Profile Information (Optional for social features)</h3>
+        <ul>
+          <li><strong>Email address & authentication credentials:</strong> Securely managed via <em>Supabase Auth</em> to allow account sign-in and password recovery.</li>
+          <li><strong>Username (<code>@username</code>) & display name:</strong> Used to identify your profile within the community, connect with friends, and share prayer streaks or Quran reading progress.</li>
+        </ul>
+
+        <h3>2.2. Spiritual Progress & Community Activity</h3>
+        <ul>
+          <li><strong>Prayer streaks & Quran progress:</strong> Synced to your profile so you can keep your history and share daily motivation with your accepted friends.</li>
+          <li><strong>Community Dua Wall:</strong> If you post a community supplication (Dua) or pray for another user's Dua, the text and support counter are stored.</li>
+          <li><strong>Friend Messages:</strong> Chat messages sent between friends are stored for delivery and are <strong>automatically deleted after 30 days</strong>, or immediately if the friendship or account is deleted.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <strong>Privacy Commitment:</strong> Islam Together <strong>DOES NOT sell, rent, or share</strong> your personal data with third parties for advertising or commercial tracking purposes.
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>3. Device Permissions</h2>
+        <p>To function properly on your Android device, the app may request the following permissions:</p>
+        <div class="perm-grid">
+          <div class="perm-item">
+            <div class="perm-title">📍 Location (Fine & Coarse)</div>
+            <div class="perm-desc">Used <strong>exclusively</strong> to astronomically calculate accurate prayer times (Adhan) based on your coordinates and orient the Qibla compass. We never track or sell your location history.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">🔔 Notifications & Exact Alarms</div>
+            <div class="perm-desc">Permissions (<code>POST_NOTIFICATIONS</code>, <code>USE_EXACT_ALARM</code>, and media playback foreground service) required to play the Adhan and notify you on time for each daily prayer.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">🔒 Biometrics / Fingerprint</div>
+            <div class="perm-desc">Permission (<code>USE_BIOMETRIC</code>) used locally via the Android OS to unlock the app if you enable the security lock. Your biometric data never leaves your device.</div>
+          </div>
+          <div class="perm-item">
+            <div class="perm-title">💳 Google Play Billing</div>
+            <div class="perm-desc">In-app purchases or contributions are processed entirely by Google Play. Islam Together never accesses or stores your payment card details.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>4. Data Storage, Security & Retention</h2>
+        <ul>
+          <li><strong>Encryption in transit and at rest:</strong> All data transmitted between the app and our cloud backend (<em>Supabase</em>) is encrypted via HTTPS/TLS. On the device, we use encrypted storage (<code>flutter_secure_storage</code>) and database Row Level Security (RLS) policies.</li>
+          <li><strong>Message Retention (30 days):</strong> Private messages between friends have a maximum retention period of 30 days, after which they are automatically purged from our servers.</li>
+          <li><strong>Account Retention:</strong> Your profile data is retained only while your account remains active.</li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>5. Account Deletion & User Rights (GDPR)</h2>
+        <p>You have full control over your personal data and may exercise your rights of access, rectification, portability, and erasure at any time:</p>
+        <ul>
+          <li><strong>Immediate In-App Deletion:</strong> Go to <strong>Settings → Account → Delete Account</strong> inside the app and confirm. This triggers an immediate, irreversible cascade deletion (<code>ON DELETE CASCADE</code>) of your user account, profile, streaks, friendships, messages, and Duas with zero additional retention period.</li>
+          <li><strong>Web / Email Deletion Request:</strong> If you have already uninstalled the app, you may request account or data deletion via our dedicated Account Deletion page or by emailing our support address below.</li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>6. Children's Privacy</h2>
+        <p>Islam Together is a general-audience application focused on spiritual practice. We do not knowingly collect personal identifiable information from children under 13 (or the applicable age of digital consent in their jurisdiction) without verifiable parental consent. Parents or guardians may delete an account at any time from the in-app settings or by contacting us for immediate removal.</p>
+      </section>
+
+      <section class="section-card">
+        <h2>7. Contact & Support</h2>
+        <p>If you have any questions about this Privacy Policy, our data practices, or wish to exercise your privacy rights, please contact us at:</p>
+        <ul>
+          <li><strong>Support Email:</strong> <a href="mailto:sinan.bouhoutani@edu.uah.es">sinan.bouhoutani@edu.uah.es</a></li>
+          <li><strong>Application:</strong> Islam Together (<code>com.islamtogether.app</code>)</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2026 Islam Together · Todos los derechos reservados / All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+      });
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
