@@ -51,9 +51,10 @@
     };
     const selector=document.getElementById('language');
     Object.entries(languages).forEach(([code,copy])=>{const option=document.createElement('option');option.value=code;option.textContent=copy.name;selector.append(option)});
-    const byBrowser=(navigator.language||'es').slice(0,2);const initial=localStorage.getItem('it-language');selector.value=languages[initial]?initial:(languages[byBrowser]?byBrowser:'es');
+    const byBrowser=(navigator.language||'').slice(0,2).toLowerCase();selector.value=languages[byBrowser]?byBrowser:'en';
     function render(code){const t=languages[code];document.documentElement.lang=code;document.documentElement.dir=t.dir;document.querySelectorAll('[data-i18n="deleteLink"]').forEach(el=>el.textContent=t.nav);document.querySelector('.rail .eyebrow').textContent=t.railLabel;document.querySelector('.rail h2').textContent=t.railTitle;document.querySelector('.rail p').textContent=t.railText;document.querySelector('#document').innerHTML=`<header class="doc-head"><div class="eyebrow">${t.kicker}</div><h1>${t.title}</h1><p class="lede">${t.lede}</p><div class="updated">${t.updated}</div></header>${t.sections.map(([n,title,body])=>`<section class="policy-section"><h2><span>${n}</span>${title}</h2><p>${body}</p></section>`).join('')}`;document.title=`${t.title} · Islam Together`;document.querySelector('.sr-only').textContent=({ar:'اختر اللغة',de:'Sprache auswählen',en:'Choose language',es:'Elige idioma',fr:'Choisir la langue',it:'Scegli la lingua',nl:'Kies taal',sq:'Zgjidh gjuhën',sr:'Izaberite jezik'})[code];selector.setAttribute('aria-label',document.querySelector('.sr-only').textContent);localStorage.setItem('it-language',code)}
     selector.addEventListener('change',()=>render(selector.value));render(selector.value);
   </script>
 </body>
 </html>
+
